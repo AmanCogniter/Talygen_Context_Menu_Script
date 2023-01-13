@@ -7,7 +7,11 @@ import org.testng.annotations.Test;
 import action.AppointmentCalendarAction;
 import action.LoginAction;
 import utils.WebTestBase;
-
+/**
+ * 
+ * @author aanand
+ *
+ */
 public class AppointmentCalendarTest extends WebTestBase{
 	static String Screenname = "<b>Appoitment calender</b>"; 
 	/*

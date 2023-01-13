@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 07 14:17:39 IST 2022</td>
+<td>Started on:</td><td>Fri Dec 09 15:51:23 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1905 seconds (1905933 ms)</td>
+<tr><td>Total time:</td><td>2063 seconds (2063536 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,60 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.HumanResourcesTest.ValidateClickTestingOfAttendancePage()'><b>ValidateClickTestingOfAttendancePage</b><br>Test class: testcases.HumanResourcesTest</td>
+<td><div><pre>java.lang.AssertionError: Track Attendance -  element not present
+	at utils.WebBasePage.click(WebBasePage.java:126)
+	at pageobjects.HumanResourcesPage.clickOnTrackAttendance(HumanResourcesPage.java:73)
+	at action.HumanResourcesAction.GoToAttendancePage(HumanResourcesAction.java:37)
+	at testcases.HumanResourcesTest.ValidateClickTestingOfAttendancePage(HumanResourcesTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037202079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037202079'><pre>java.lang.AssertionError: Track Attendance -  element not present
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.click(WebBasePage.java:126)
+	at pageobjects.HumanResourcesPage.clickOnTrackAttendance(HumanResourcesPage.java:73)
+	at action.HumanResourcesAction.GoToAttendancePage(HumanResourcesAction.java:37)
+	at testcases.HumanResourcesTest.ValidateClickTestingOfAttendancePage(HumanResourcesTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>70</td>
+<td>testcases.HumanResourcesTest@130161f7</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,135 +129,130 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.FSMTest.ValidateClickTestingOfAddTicketPage()'><b>ValidateClickTestingOfAddTicketPage</b><br>Test class: testcases.FSMTest</td>
+<td title='testcases.INTEGRATIONSTest.ValidateClickTestingOfINTEGRATIONSPage()'><b>ValidateClickTestingOfINTEGRATIONSPage</b><br>Test class: testcases.INTEGRATIONSTest</td>
 <td></td>
-<td>48</td>
-<td>testcases.FSMTest@5f058f00</td></tr>
-<tr>
-<td title='testcases.MSPModuleTest.ValidateClickTestingOfAddPackagesPage()'><b>ValidateClickTestingOfAddPackagesPage</b><br>Test class: testcases.MSPModuleTest</td>
-<td></td>
-<td>46</td>
-<td>testcases.MSPModuleTest@72057ecf</td></tr>
-<tr>
-<td title='testcases.TimeTrackingTest.ValidateClickTestingOfAuditRulePage()'><b>ValidateClickTestingOfAuditRulePage</b><br>Test class: testcases.TimeTrackingTest</td>
-<td></td>
-<td>109</td>
-<td>testcases.TimeTrackingTest@402bba4f</td></tr>
+<td>44</td>
+<td>testcases.INTEGRATIONSTest@5f058f00</td></tr>
 <tr>
 <td title='testcases.CRMTest.ValidateClickTestingOfAccountsPage()'><b>ValidateClickTestingOfAccountsPage</b><br>Test class: testcases.CRMTest</td>
 <td></td>
-<td>70</td>
-<td>testcases.CRMTest@43195e57</td></tr>
-<tr>
-<td title='testcases.VDeskTest.ValidateClickTestingOfApplicationSettingsPage()'><b>ValidateClickTestingOfApplicationSettingsPage</b><br>Test class: testcases.VDeskTest</td>
-<td></td>
-<td>42</td>
-<td>testcases.VDeskTest@6973b51b</td></tr>
-<tr>
-<td title='testcases.HiringTest.ValidateClickTestingOfCandidateListPage()'><b>ValidateClickTestingOfCandidateListPage</b><br>Test class: testcases.HiringTest</td>
-<td></td>
-<td>50</td>
-<td>testcases.HiringTest@795cd85e</td></tr>
-<tr>
-<td title='testcases.ProjectManagementTest.ValidateClickTestingOfGlobalTaskPage()'><b>ValidateClickTestingOfGlobalTaskPage</b><br>Test class: testcases.ProjectManagementTest</td>
-<td></td>
-<td>121</td>
-<td>testcases.ProjectManagementTest@dbf57b3</td></tr>
-<tr>
-<td title='testcases.GeneralTest.ValidateClickTestingOfAddReportPage()'><b>ValidateClickTestingOfAddReportPage</b><br>Test class: testcases.GeneralTest</td>
-<td></td>
-<td>65</td>
-<td>testcases.GeneralTest@7714e963</td></tr>
-<tr>
-<td title='testcases.ApprovalTest.ValidateClickTestingOfApprovalChainPage()'><b>ValidateClickTestingOfApprovalChainPage</b><br>Test class: testcases.ApprovalTest</td>
-<td></td>
-<td>42</td>
-<td>testcases.ApprovalTest@333291e3</td></tr>
-<tr>
-<td title='testcases.TrainingTest.ValidateClickTestingOfTrainingPage()'><b>ValidateClickTestingOfTrainingPage</b><br>Test class: testcases.TrainingTest</td>
-<td></td>
-<td>48</td>
-<td>testcases.TrainingTest@f5ac9e4</td></tr>
-<tr>
-<td title='testcases.COMPANYSETUPTest.ValidateClickTestingOfClientPage()'><b>ValidateClickTestingOfClientPage</b><br>Test class: testcases.COMPANYSETUPTest</td>
-<td></td>
-<td>42</td>
-<td>testcases.COMPANYSETUPTest@123ef382</td></tr>
-<tr>
-<td title='testcases.BillingTest.ValidateClickTestingOfAutomateFlagProcessingPage()'><b>ValidateClickTestingOfAutomateFlagProcessingPage</b><br>Test class: testcases.BillingTest</td>
-<td></td>
-<td>49</td>
-<td>testcases.BillingTest@3835c46</td></tr>
-<tr>
-<td title='testcases.TicketingTest.ValidateClickTestingOfTicketingPage()'><b>ValidateClickTestingOfTicketingPage</b><br>Test class: testcases.TicketingTest</td>
-<td></td>
-<td>93</td>
-<td>testcases.TicketingTest@6e171cd7</td></tr>
-<tr>
-<td title='testcases.EventManagementTest.ValidateClickTestingOfCalendarPage()'><b>ValidateClickTestingOfCalendarPage</b><br>Test class: testcases.EventManagementTest</td>
-<td></td>
-<td>85</td>
-<td>testcases.EventManagementTest@393671df</td></tr>
-<tr>
-<td title='testcases.ExpenseTest.ValidateClickTestingOfAddExpensePage()'><b>ValidateClickTestingOfAddExpensePage</b><br>Test class: testcases.ExpenseTest</td>
-<td></td>
-<td>60</td>
-<td>testcases.ExpenseTest@20ce78ec</td></tr>
+<td>76</td>
+<td>testcases.CRMTest@1ab3a8c8</td></tr>
 <tr>
 <td title='testcases.DisplayScreenTest.ValidateClickTestingOfCounterPage()'><b>ValidateClickTestingOfCounterPage</b><br>Test class: testcases.DisplayScreenTest</td>
 <td></td>
 <td>45</td>
-<td>testcases.DisplayScreenTest@1afd44cb</td></tr>
-<tr>
-<td title='testcases.IntegrationTest.ValidateClickTestingOfBasecampPage()'><b>ValidateClickTestingOfBasecampPage</b><br>Test class: testcases.IntegrationTest</td>
-<td></td>
-<td>42</td>
-<td>testcases.IntegrationTest@384ad17b</td></tr>
-<tr>
-<td title='testcases.CommunicationTest.ValidateClickTestingOfIVRPage()'><b>ValidateClickTestingOfIVRPage</b><br>Test class: testcases.CommunicationTest</td>
-<td></td>
-<td>58</td>
-<td>testcases.CommunicationTest@59fd97a8</td></tr>
-<tr>
-<td title='testcases.AssetManagementTest.ValidateClickTestingOfGroupListPage()'><b>ValidateClickTestingOfGroupListPage</b><br>Test class: testcases.AssetManagementTest</td>
-<td></td>
-<td>103</td>
-<td>testcases.AssetManagementTest@1dde4cb2</td></tr>
+<td>testcases.DisplayScreenTest@72057ecf</td></tr>
 <tr>
 <td title='testcases.HRManagementTest.ValidateClickTestingOfAttendancePage()'><b>ValidateClickTestingOfAttendancePage</b><br>Test class: testcases.HRManagementTest</td>
 <td></td>
-<td>74</td>
-<td>testcases.HRManagementTest@498d318c</td></tr>
+<td>85</td>
+<td>testcases.HRManagementTest@40ef3420</td></tr>
 <tr>
-<td title='testcases.HumanResourcesTest.ValidateClickTestingOfAttendancePage()'><b>ValidateClickTestingOfAttendancePage</b><br>Test class: testcases.HumanResourcesTest</td>
+<td title='testcases.TimeTrackingTest.ValidateClickTestingOfAuditRulePage()'><b>ValidateClickTestingOfAuditRulePage</b><br>Test class: testcases.TimeTrackingTest</td>
 <td></td>
-<td>55</td>
-<td>testcases.HumanResourcesTest@2c767a52</td></tr>
+<td>116</td>
+<td>testcases.TimeTrackingTest@6e171cd7</td></tr>
 <tr>
 <td title='testcases.AppointmentCalendarTest.ValidateClickTestingOfManageExternalLinkPage()'><b>ValidateClickTestingOfManageExternalLinkPage</b><br>Test class: testcases.AppointmentCalendarTest</td>
 <td></td>
-<td>50</td>
-<td>testcases.AppointmentCalendarTest@1ab3a8c8</td></tr>
+<td>52</td>
+<td>testcases.AppointmentCalendarTest@6973b51b</td></tr>
 <tr>
-<td title='testcases.INTEGRATIONSTest.ValidateClickTestingOfINTEGRATIONSPage()'><b>ValidateClickTestingOfINTEGRATIONSPage</b><br>Test class: testcases.INTEGRATIONSTest</td>
+<td title='testcases.ApprovalTest.ValidateClickTestingOfApprovalChainPage()'><b>ValidateClickTestingOfApprovalChainPage</b><br>Test class: testcases.ApprovalTest</td>
 <td></td>
-<td>44</td>
-<td>testcases.INTEGRATIONSTest@192d43ce</td></tr>
-<tr>
-<td title='testcases.DocumentStorageTest.ValidateClickTestingOfManageClientStoragePage()'><b>ValidateClickTestingOfManageClientStoragePage</b><br>Test class: testcases.DocumentStorageTest</td>
-<td></td>
-<td>76</td>
-<td>testcases.DocumentStorageTest@56620197</td></tr>
-<tr>
-<td title='testcases.VendorTest.ValidateClickTestingOfTrainingPage()'><b>ValidateClickTestingOfTrainingPage</b><br>Test class: testcases.VendorTest</td>
-<td></td>
-<td>53</td>
-<td>testcases.VendorTest@479d31f3</td></tr>
+<td>47</td>
+<td>testcases.ApprovalTest@43195e57</td></tr>
 <tr>
 <td title='testcases.PerformanceReviewTest.ValidateClickTestingOfPerformanceReviewPage()'><b>ValidateClickTestingOfPerformanceReviewPage</b><br>Test class: testcases.PerformanceReviewTest</td>
 <td></td>
-<td>78</td>
-<td>testcases.PerformanceReviewTest@40ef3420</td></tr>
+<td>85</td>
+<td>testcases.PerformanceReviewTest@479d31f3</td></tr>
+<tr>
+<td title='testcases.VDeskTest.ValidateClickTestingOfApplicationSettingsPage()'><b>ValidateClickTestingOfApplicationSettingsPage</b><br>Test class: testcases.VDeskTest</td>
+<td></td>
+<td>45</td>
+<td>testcases.VDeskTest@1afd44cb</td></tr>
+<tr>
+<td title='testcases.TicketingTest.ValidateClickTestingOfTicketingPage()'><b>ValidateClickTestingOfTicketingPage</b><br>Test class: testcases.TicketingTest</td>
+<td></td>
+<td>144</td>
+<td>testcases.TicketingTest@498d318c</td></tr>
+<tr>
+<td title='testcases.DocumentStorageTest.ValidateClickTestingOfManageClientStoragePage()'><b>ValidateClickTestingOfManageClientStoragePage</b><br>Test class: testcases.DocumentStorageTest</td>
+<td></td>
+<td>89</td>
+<td>testcases.DocumentStorageTest@393671df</td></tr>
+<tr>
+<td title='testcases.IntegrationTest.ValidateClickTestingOfBasecampPage()'><b>ValidateClickTestingOfBasecampPage</b><br>Test class: testcases.IntegrationTest</td>
+<td></td>
+<td>44</td>
+<td>testcases.IntegrationTest@dbf57b3</td></tr>
+<tr>
+<td title='testcases.BillingTest.ValidateClickTestingOfAutomateFlagProcessingPage()'><b>ValidateClickTestingOfAutomateFlagProcessingPage</b><br>Test class: testcases.BillingTest</td>
+<td></td>
+<td>54</td>
+<td>testcases.BillingTest@20deea7f</td></tr>
+<tr>
+<td title='testcases.VendorTest.ValidateClickTestingOfTrainingPage()'><b>ValidateClickTestingOfTrainingPage</b><br>Test class: testcases.VendorTest</td>
+<td></td>
+<td>55</td>
+<td>testcases.VendorTest@333291e3</td></tr>
+<tr>
+<td title='testcases.AssetManagementTest.ValidateClickTestingOfGroupListPage()'><b>ValidateClickTestingOfGroupListPage</b><br>Test class: testcases.AssetManagementTest</td>
+<td></td>
+<td>110</td>
+<td>testcases.AssetManagementTest@3835c46</td></tr>
+<tr>
+<td title='testcases.HiringTest.ValidateClickTestingOfCandidateListPage()'><b>ValidateClickTestingOfCandidateListPage</b><br>Test class: testcases.HiringTest</td>
+<td></td>
+<td>51</td>
+<td>testcases.HiringTest@402bba4f</td></tr>
+<tr>
+<td title='testcases.TrainingTest.ValidateClickTestingOfTrainingPage()'><b>ValidateClickTestingOfTrainingPage</b><br>Test class: testcases.TrainingTest</td>
+<td></td>
+<td>53</td>
+<td>testcases.TrainingTest@59fd97a8</td></tr>
+<tr>
+<td title='testcases.ProjectManagementTest.ValidateClickTestingOfGlobalTaskPage()'><b>ValidateClickTestingOfGlobalTaskPage</b><br>Test class: testcases.ProjectManagementTest</td>
+<td></td>
+<td>116</td>
+<td>testcases.ProjectManagementTest@123ef382</td></tr>
+<tr>
+<td title='testcases.MSPModuleTest.ValidateClickTestingOfAddPackagesPage()'><b>ValidateClickTestingOfAddPackagesPage</b><br>Test class: testcases.MSPModuleTest</td>
+<td></td>
+<td>51</td>
+<td>testcases.MSPModuleTest@192d43ce</td></tr>
+<tr>
+<td title='testcases.COMPANYSETUPTest.ValidateClickTestingOfClientPage()'><b>ValidateClickTestingOfClientPage</b><br>Test class: testcases.COMPANYSETUPTest</td>
+<td></td>
+<td>45</td>
+<td>testcases.COMPANYSETUPTest@f5ac9e4</td></tr>
+<tr>
+<td title='testcases.GeneralTest.ValidateClickTestingOfAddReportPage()'><b>ValidateClickTestingOfAddReportPage</b><br>Test class: testcases.GeneralTest</td>
+<td></td>
+<td>71</td>
+<td>testcases.GeneralTest@1dde4cb2</td></tr>
+<tr>
+<td title='testcases.FSMTest.ValidateClickTestingOfAddTicketPage()'><b>ValidateClickTestingOfAddTicketPage</b><br>Test class: testcases.FSMTest</td>
+<td></td>
+<td>56</td>
+<td>testcases.FSMTest@55b7a4e0</td></tr>
+<tr>
+<td title='testcases.CommunicationTest.ValidateClickTestingOfIVRPage()'><b>ValidateClickTestingOfIVRPage</b><br>Test class: testcases.CommunicationTest</td>
+<td></td>
+<td>64</td>
+<td>testcases.CommunicationTest@795cd85e</td></tr>
+<tr>
+<td title='testcases.EventManagementTest.ValidateClickTestingOfCalendarPage()'><b>ValidateClickTestingOfCalendarPage</b><br>Test class: testcases.EventManagementTest</td>
+<td></td>
+<td>91</td>
+<td>testcases.EventManagementTest@20ce78ec</td></tr>
+<tr>
+<td title='testcases.ExpenseTest.ValidateClickTestingOfAddExpensePage()'><b>ValidateClickTestingOfAddExpensePage</b><br>Test class: testcases.ExpenseTest</td>
+<td></td>
+<td>55</td>
+<td>testcases.ExpenseTest@7714e963</td></tr>
 </table><p>
 </body>
 </html>

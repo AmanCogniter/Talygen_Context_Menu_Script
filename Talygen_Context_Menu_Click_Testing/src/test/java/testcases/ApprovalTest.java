@@ -7,7 +7,11 @@ import org.testng.annotations.Test;
 import action.ApprovalAction;
 import action.LoginAction;
 import utils.WebTestBase;
-
+/**
+ * 
+ * @author aanand
+ *
+ */
 public class ApprovalTest extends WebTestBase{
 	static String Screenname = "<b>Approval</b>"; 
 	/*

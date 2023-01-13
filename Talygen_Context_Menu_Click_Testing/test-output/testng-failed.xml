@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.AppointmentCalendarTest">
+      <class name="testcases.HumanResourcesTest">
         <methods>
           <include name="closeBrowser"/>
+          <include name="ValidateClickTestingOfAttendancePage"/>
           <include name="beforeMethod"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
-          <include name="ValidateClickTestingOfManageExternalLinkPage"/>
         </methods>
-      </class> <!-- testcases.AppointmentCalendarTest -->
+      </class> <!-- testcases.HumanResourcesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

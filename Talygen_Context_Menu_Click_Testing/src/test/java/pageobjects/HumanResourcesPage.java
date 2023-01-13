@@ -70,7 +70,7 @@ public class HumanResourcesPage extends WebBasePage{
      }
      public void clickOnTrackAttendance()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Track Attendance'])[last()]"),"Track Attendance", 30);
+    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Attendance'])[last()]"),"Attendance", 30);
     	
     	 try {
     		 WebElement trackAttendance = driver.findElement(By.xpath("//div/span[contains(text(),'Attendance Approval')]"));

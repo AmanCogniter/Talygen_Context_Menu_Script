@@ -7,7 +7,11 @@ import org.testng.annotations.Test;
 import action.EventManagementAction;
 import action.LoginAction;
 import utils.WebTestBase;
-
+/**
+ * 
+ * @author aanand
+ *
+ */
 public class EventManagementTest extends WebTestBase{
 	static String Screenname = "<b>Event Management</b>"; 
 	/*
