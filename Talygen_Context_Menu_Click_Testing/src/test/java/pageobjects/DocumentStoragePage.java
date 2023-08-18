@@ -46,10 +46,10 @@ public class DocumentStoragePage extends WebBasePage{
      }
      public void clickOnFileDashboard()
      {		staticWait(2000);
-    	 click(By.xpath("//div/ul/li/a[@data-original-title='File Dashboard']"),"File Dashboard", 30);
+    	 click(By.xpath("//div/ul/li/a[contains(text(),' File_Dashboard ')]"),"File Dashboard", 30);
     	
     	 try {
-    		 WebElement fileDashboardPage = driver.findElement(By.xpath("//div/span[text()='Storage Capacity']"));
+    		 WebElement fileDashboardPage = driver.findElement(By.xpath("//div/span[text()='Document Storage']"));
     		 if (fileDashboardPage.isDisplayed()) {
 				logger.info("File Dashboard Page opened succesfully");
 			}
@@ -60,7 +60,7 @@ public class DocumentStoragePage extends WebBasePage{
      }
      public void clickOnInbox()
      {		staticWait(2000);
-    	 click(By.xpath("//div/ul/li/a[@data-original-title='Inbox']"),"Inbox", 30);
+    	 click(By.xpath("//div/ul/li/a[contains(text(),'Inbox')]"),"Inbox", 30);
     	
     	 try {
     		 WebElement inboxPage = driver.findElement(By.xpath("//div/h5/span[text()='Reports']"));

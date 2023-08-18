@@ -40,18 +40,18 @@ public class AssetManagementPage extends WebBasePage{
 			logger.info("Group List Page not opened succesfully");
 		}
      }
-     public void clickOnAssetDashboard()
+     public void clickOnProductDashboard()
      {		staticWait(2000);
-    	 click(By.xpath("//div/ul/li/a[@data-original-title='Asset Dashboard']"),"Asset Dashboard", 30);
+    	 click(By.xpath("//div/ul/li/a[@data-original-title='Product Dashboard']"),"Product Dashboard", 30);
     	
     	 try {
-    		 WebElement assetDashboard = driver.findElement(By.xpath("//div/span[text()='Asset Dashboard']"));
+    		 WebElement assetDashboard = driver.findElement(By.xpath("//div/span[text()='Product Dashboard']"));
     		 if (assetDashboard.isDisplayed()) {
-				logger.info("Asset Dashboard Page opened succesfully");
+				logger.info("Product Dashboard Page opened succesfully");
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
-			logger.info("Asset Dashboard Page not opened succesfully");
+			logger.info("Product Dashboard Page not opened succesfully");
 		}
      }
      public void clickOnBarcodeSearch()

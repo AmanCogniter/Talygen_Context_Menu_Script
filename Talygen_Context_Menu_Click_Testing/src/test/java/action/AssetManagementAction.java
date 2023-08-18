@@ -26,7 +26,7 @@ public class AssetManagementAction {
 	{
 		
 		assetManagementPage.clickOnGroupList();	
-		assetManagementPage.clickOnAssetDashboard();
+		assetManagementPage.clickOnProductDashboard();
 		assetManagementPage.clickOnBarcodeSearch();
 		assetManagementPage.clickOnMaintenanceSchedule();
 		assetManagementPage.clickOnAddProductType();

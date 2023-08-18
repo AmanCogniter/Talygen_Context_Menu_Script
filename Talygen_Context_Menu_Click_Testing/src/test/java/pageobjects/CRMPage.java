@@ -43,7 +43,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnLead()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Lead'])[last()]"),"Lead", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),'Lead')])[last()]"),"Lead", 30);
     	
     	 try {
     		 WebElement leadPage = driver.findElement(By.xpath("//div/span[text()='Leads']"));
@@ -57,7 +57,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnDeal()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Deal'])[last()]"),"Deal", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),'Deal')])[last()]"),"Deal", 30);
     	
     	 try {
     		 WebElement dealPage = driver.findElement(By.xpath("//div/span[text()='Deals']"));
@@ -71,7 +71,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnProductType()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Product Type'])[last()]"),"Product Type", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),' Product Type ')])[last()]"),"Product Type", 30);
     	
     	 try {
     		 WebElement productTypePage = driver.findElement(By.xpath("//div/span[text()='Product Type']"));
@@ -85,21 +85,21 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnProduct()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Product'])[last()]"),"Product", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),' Item ')])[last()]"),"Item", 30);
     	
     	 try {
-    		 WebElement productPage = driver.findElement(By.xpath("//div/span[text()='Product']"));
+    		 WebElement productPage = driver.findElement(By.xpath("//div/span[contains(text(),'Product')]"));
     		 if (productPage.isDisplayed()) {
-				logger.info("Product Page opened succesfully");
+				logger.info("Item Page opened succesfully");
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
-			logger.info("Product Page not opened succesfully");
+			logger.info("Item Page not opened succesfully");
 		}
      }
      public void clickOnPurchaseOrder()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Purchase Order'])[last()]"),"Purchase Order", 30);
+    	 click(By.xpath("//div/ul/li/a[contains(text(),' PurchaseOrderBulk ')]"),"Purchase Order", 30);
     	
     	 try {
     		 WebElement purchaseOrderPage = driver.findElement(By.xpath("//div/span[text()='Purchase Order']"));
@@ -113,7 +113,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnSalesOrder()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Sales Order'])[last()]"),"Sales Order", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),' SalesOrder ')])[last()]"),"Sales Order", 30);
     	
     	 try {
     		 WebElement salesOrderPage = driver.findElement(By.xpath("//div/span[text()='Sales Order']"));
@@ -127,7 +127,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnStage()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Stage'])[last()]"),"Stage", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),' Stage ')])[last()]"),"Stage", 30);
     	
     	 try {
     		 WebElement stagePage = driver.findElement(By.xpath("//div/span[text()='Stage']"));
@@ -141,7 +141,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnManageLayout()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Manage Layout'])[last()]"),"Manage Layout", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),' Manage Layout ')])[last()]"),"Manage Layout", 30);
     	
     	 try {
     		 WebElement manageLayoutPage = driver.findElement(By.xpath("//div/span[text()='Manage Layout']"));
@@ -155,7 +155,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnCRMReport()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='CRM Report'])[last()]"),"CRM Report", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),' CRM Report ')])[last()]"),"CRM Report", 30);
     	
     	 try {
     		 WebElement cRMReportPage = driver.findElement(By.xpath("//div/span[text()='CRM Reports']"));
@@ -169,7 +169,7 @@ public class CRMPage extends WebBasePage{
      }
      public void clickOnCRMDashboard()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='CRM Dashboard'])[last()]"),"CRM Dashboard", 30);
+    	 click(By.xpath("(//div/ul/li/a[contains(text(),' CRMDashboard ')])[last()]"),"CRM Dashboard", 30);
     	
     	 try {
     		 WebElement cRMDashboardPage = driver.findElement(By.xpath("//div/span[text()=' Dashboard']"));

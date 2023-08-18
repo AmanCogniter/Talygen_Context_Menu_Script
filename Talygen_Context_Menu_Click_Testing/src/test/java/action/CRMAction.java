@@ -30,13 +30,13 @@ public class CRMAction
 		cRMPage.clickOnAccounts();	
 		cRMPage.clickOnLead();
 		cRMPage.clickOnDeal();
-		cRMPage.clickOnProductType();
+		//cRMPage.clickOnProductType();
 		cRMPage.clickOnProduct();
 		cRMPage.clickOnPurchaseOrder();
 		cRMPage.clickOnSalesOrder();
 		cRMPage.clickOnStage();
-		cRMPage.clickOnManageLayout();
-		cRMPage.clickOnCRMReport();
+		//cRMPage.clickOnManageLayout();
+		//cRMPage.clickOnCRMReport();
 		cRMPage.clickOnCRMDashboard();
 	}
 

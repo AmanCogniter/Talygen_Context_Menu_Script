@@ -32,7 +32,7 @@ public class DocumentStorageAction {
 		documentStoragePage.clickOnClients();
 		documentStoragePage.clickOnManageUserStorage();
 		documentStoragePage.clickOnStorage();
-		documentStoragePage.clickOnUserStorageReport();
+		//documentStoragePage.clickOnUserStorageReport();
 		documentStoragePage.clickOnRoles();
 		documentStoragePage.clickOnUserNotifications();
 		documentStoragePage.clickOnCompanyNotifications();

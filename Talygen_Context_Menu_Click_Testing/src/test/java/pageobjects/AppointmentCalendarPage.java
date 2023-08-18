@@ -42,7 +42,7 @@ public class AppointmentCalendarPage extends WebBasePage{
      }
      public void clickOnScheduleAppointment()
      {		staticWait(2000);
-    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Schedule Appointment'])[2]"),"Schedule Appointment", 30);
+    	 click(By.xpath("(//div/ul/li/a[@data-original-title='Schedule Appointment'])[last()]"),"Schedule Appointment", 30);
     	
     	 try {
     		 WebElement scheduleAppointment = driver.findElement(By.xpath("//div/span[text()='Schedule Appointment']"));

@@ -3,16 +3,56 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.HumanResourcesTest">
+      <class name="testcases.AppointmentCalendarTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="ValidateClickTestingOfAttendancePage"/>
+          <include name="beforeMethod"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+          <include name="ValidateClickTestingOfManageExternalLinkPage"/>
+        </methods>
+      </class> <!-- testcases.AppointmentCalendarTest -->
+      <class name="testcases.FSMTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="ValidateClickTestingOfAddTicketPage"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.FSMTest -->
+      <class name="testcases.DocumentStorageTest">
+        <methods>
+          <include name="ValidateClickTestingOfManageClientStoragePage"/>
+          <include name="closeBrowser"/>
           <include name="beforeMethod"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.HumanResourcesTest -->
+      </class> <!-- testcases.DocumentStorageTest -->
+      <class name="testcases.CRMTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+          <include name="ValidateClickTestingOfAccountsPage"/>
+        </methods>
+      </class> <!-- testcases.CRMTest -->
+      <class name="testcases.AssetManagementTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="ValidateClickTestingOfGroupListPage"/>
+          <include name="beforeMethod"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.AssetManagementTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
